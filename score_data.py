@@ -2,7 +2,10 @@
 import os
 import sys
 import traceback
+import datetime
 
+now = datetime.datetime.now()
+current = "_%d_%d_%d_%d_%d" % (now.year, now.month, now.day, now.hour, now.minute)
 class song:
     def __init__(self):
         self.name = ''
@@ -208,7 +211,7 @@ def volforce(song):
 
 
 def print_vf(songlist):
-    output = open("volforce.txt", 'w', encoding="utf8")
+    output = open("volforce" + current +".txt", 'w', encoding="utf8")
     totalvf = 0
     for i in range(0, 20):
         totalvf += songlist[i].volforce
