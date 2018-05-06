@@ -25,7 +25,7 @@ The file `score_data.txt` will contain all of your score data, as shown below.
 
 ![picture](img/preview1.PNG)
 
-The file `volforce.txt` will contain your total play count and your whole score data, sorted by volforce.
+The file `volforce_year_month_date_hour_minute.txt` will contain your total play count and your whole score data, sorted by volforce. The filename also contains the time so that you can check how much your rating has changed over time.
 
 For each song, volforce is calculated by the following equation
 
